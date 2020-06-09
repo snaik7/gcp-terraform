@@ -1,8 +1,8 @@
 resource "google_compute_instance" "app" {
   name         = "my-app-instance"
   project      = "named-enigma-277405" #didn't work with var.project_id
-  machine_type = "n1-standard-2"
-  zone         = "us-central1-b"
+  machine_type = "f1-micro"
+  zone         = "us-central1-c"
 
   boot_disk {
     initialize_params {
